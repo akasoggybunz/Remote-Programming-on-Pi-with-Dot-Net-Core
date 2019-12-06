@@ -6,8 +6,10 @@ Instructions and Code sets for Programming on a Raspberry Pi using Dot Net Core 
 - [Raspberry Pi](https://www.raspberrypi.org)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [Etcher](https://www.balena.io/etcher/)
+- SSH Client
+       - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (Windows)
 
-## SSH Key
+## Generate SSH Key
 ### Windows
 1. Open Command Prompt. (Windows Key -> cmd -> enter)
 2. Type `ssh-keygen`
