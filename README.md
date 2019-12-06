@@ -61,7 +61,7 @@ Note: Much of this is taken from [Hanselman.com](https://www.hanselman.com/blog/
  2. `ctrl+p`
  3. `Remote-SSH` in Textbox on top
  4. click `Remote-SSH: Connect to Host`
- 5. TODO will add more docuemntation here. Soon
+ 5. TODO will add more documentation soon.
 
 ## Hello World
 
