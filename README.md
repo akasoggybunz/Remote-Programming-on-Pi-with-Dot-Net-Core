@@ -53,6 +53,15 @@ Instructions and Code sets for Programming on a Raspberry Pi using Dot Net Core 
        - If this did not work there was an error. Please look over the instructions and make sure you didn't miss anything. If you feel you have done everything correctly please submit an issue.
 
 ## Visual Studio Code
+Note: Much of this is taken from [Hanselman.com](https://www.hanselman.com/blog/VisualStudioCodeRemoteDevelopmentOverSSHToARaspberryPiIsButter.aspx)
+1. Install the [Remote Development Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
+       - Click on Extensions on the Left Hand side
+       - In the 'Search Extensions in Marketplace' type `Remote Development`
+       - Install
+ 2. `ctrl+p`
+ 3. `Remote-SSH` in Textbox on top
+ 4. click `Remote-SSH: Connect to Host`
+ 5. TODO will add more docuemntation here. Soon
 
 ## Hello World
 
