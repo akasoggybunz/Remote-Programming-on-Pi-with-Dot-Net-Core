@@ -35,21 +35,42 @@ Instructions and Code sets for Programming on a Raspberry Pi using Dot Net Core 
     - Get IP of PI. I use FING Android APP to find the I.P. Address of PI.
 
 ## Dot Net Core on PI
-1. SSH into the Raspberry Pi
-2. `sudo apt-get update && apt-get upgrade -y`
-3. `sudo apt-get install curl libunwind8 gettext apt-transport-https`
-4. `wget https://download.visualstudio.microsoft.com/download/pr/67766a96-eb8c-4cd2-bca4-ea63d2cc115c/7bf13840aa2ed88793b7315d5e0d74e6/dotnet-sdk-3.1.100-linux-arm.tar.gz`
-5. `mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-arm.tar.gz -C $HOME/dotnet`
-6. `export DOTNET_ROOT=$HOME/dotnet`
-7. `export PATH=$PATH:$HOME/dotnet`
-8. `sudo nano ~/.bash_profile, ~/.bashrc` 
-9. Add to end of file `export PATH=$PATH:$HOME/dotnet` 
-10. Add to next line `export DOTNET_ROOT=$HOME/dotnet`
-11. `ctrl+x` -> `y` -> `enter`
-12. `sudo apt-get update`
-13. `dotnet --version`
-       - This should tell you the version of dotnet.
-       - If this did not work there was an error. Please look over the instructions and make sure you didn't miss anything. If you feel you have done everything correctly please submit an issue.
+- SSH into the Raspberry Pi
+
+### Installing .NET Core Globally
+
+The following instructions install .NET Core globally. It isn't required to do that, but it provides the best experience.
+
+```console
+curl -SL -o dotnet.tar.gz https://dotnetcli.blob.core.windows.net/dotnet/Sdk/master/dotnet-sdk-latest-l
+inux-arm64.tar.gz
+sudo mkdir -p /usr/share/dotnet
+sudo tar -zxf dotnet.tar.gz -C /usr/share/dotnet
+sudo ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
+```
+### Installing .Net Core Locally
+```console
+sudo apt-get update && apt-get upgrade -y
+sudo apt-get install curl libunwind8 gettext apt-transport-https
+wget https://download.visualstudio.microsoft.com/download/pr/67766a96-eb8c-4cd2-bca4-ea63d2cc115c/7bf13840aa2ed88793b7315d5e0d74e6/dotnet-sdk-3.1.100-linux-arm.tar.gz
+mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-arm.tar.gz -C $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+Allow DotNet Commands after this terminal session is over
+```console
+sudo nano ~/.bash_profile, ~/.bashrc
+```
+- Add to end of file `export PATH=$PATH:$HOME/dotnet` 
+- Add to next line `export DOTNET_ROOT=$HOME/dotnet`
+
+```console
+`ctrl+x` -> `y` -> `enter`
+sudo apt-get update
+dotnet --version
+```
+- This should tell you the version of dotnet.
+- If this did not work there was an error. Please look over the instructions and make sure you didn't miss anything. If you feel you have done everything correctly please submit an issue.
 
 ## Visual Studio Code
 Note: Much of this is taken from [Hanselman.com](https://www.hanselman.com/blog/VisualStudioCodeRemoteDevelopmentOverSSHToARaspberryPiIsButter.aspx)
