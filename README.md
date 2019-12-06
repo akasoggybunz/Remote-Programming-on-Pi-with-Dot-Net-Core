@@ -49,6 +49,7 @@ sudo tar -zxf dotnet.tar.gz -C /usr/share/dotnet
 sudo ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
 ```
 ### Installing .Net Core Locally
+If you don't want to install Globally or the above didn't work try the following.
 ```console
 sudo apt-get update && apt-get upgrade -y
 sudo apt-get install curl libunwind8 gettext apt-transport-https
