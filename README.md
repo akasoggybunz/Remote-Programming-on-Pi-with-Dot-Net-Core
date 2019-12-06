@@ -1,10 +1,6 @@
 # Remote Programming on Pi with Dot Net Core 3.1
 Instructions and Code sets for Programming on a Raspberry Pi using Dot Net Core 3.1 and the IOT Nuget
 
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/akasoggybunz/)
-[![Badge for version for Visual Studio Code extension naereen.makefiles-support-for-vscode](https://vsmarketplacebadge.apphb.com/version/naereen.makefiles-support-for-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=naereen.makefiles-support-for-vscode)
-
-
 ## Prerequisites
 - [Raspberry Pi](https://www.raspberrypi.org)
        - Pi MUST be a model 2, 3, or 4 +. 
@@ -84,3 +80,7 @@ Once Connected to Raspberry Pi with Remote-SSH within Visual Studio. We can remo
 - https://pimylifeup.com/raspberry-pi-ssh-keys/ 
 - https://stackoverflow.com/questions/31813080/windows-10-ssh-keys
 - https://en.wikipedia.org/wiki/Raspberry_Pi
+
+## Footer
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/akasoggybunz/)
+[![Badge for version for Visual Studio Code extension naereen.makefiles-support-for-vscode](https://vsmarketplacebadge.apphb.com/version/naereen.makefiles-support-for-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=naereen.makefiles-support-for-vscode)
