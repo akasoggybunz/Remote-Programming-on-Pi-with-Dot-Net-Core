@@ -57,7 +57,7 @@ mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-arm.tar.gz -C $HOME/do
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```
-Allow DotNet Commands after this terminal session is over
+#### Allow Dot Net Commands after this terminal session is over
 ```console
 sudo nano ~/.bash_profile, ~/.bashrc
 ```
