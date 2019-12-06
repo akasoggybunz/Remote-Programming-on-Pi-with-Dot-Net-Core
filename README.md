@@ -1,12 +1,15 @@
 # Remote Programming on Pi with Dot Net Core 3.1
 Instructions and Code sets for Programming on a Raspberry Pi using Dot Net Core 3.1 and the IOT Nuget
 
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/akasoggybunz/)
+[![Badge for version for Visual Studio Code extension naereen.makefiles-support-for-vscode](https://vsmarketplacebadge.apphb.com/version/naereen.makefiles-support-for-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=naereen.makefiles-support-for-vscode)
+
 
 ## Prerequisites
 - [Raspberry Pi](https://www.raspberrypi.org)
        - Pi MUST be a model 2, 3, or 4 +. 
         Note: All models of generation 1 and Pi Zero are not supported because the .NET Core JIT depends on armv7 instructions not available on those versions. [reference](https://github.com/dotnet/core/blob/master/samples/RaspberryPiInstructions.md)
-- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Visual Studio Code](https://code.visualstudio.com/download) 
 - [Etcher](https://www.balena.io/etcher/)
 - SSH Client
        - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (Windows)
@@ -38,7 +41,7 @@ Instructions and Code sets for Programming on a Raspberry Pi using Dot Net Core 
 ## Dot Net Core on PI
 1. SSH into the Raspberry Pi
 2. `sudo apt-get update && apt-get upgrade -y`
-3. `sudo apt-get install apt-transport-https`
+3. `sudo apt-get install curl libunwind8 gettext apt-transport-https`
 4. `wget https://download.visualstudio.microsoft.com/download/pr/67766a96-eb8c-4cd2-bca4-ea63d2cc115c/7bf13840aa2ed88793b7315d5e0d74e6/dotnet-sdk-3.1.100-linux-arm.tar.gz`
 5. `mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-arm.tar.gz -C $HOME/dotnet`
 6. `export DOTNET_ROOT=$HOME/dotnet`
@@ -63,9 +66,11 @@ Note: Much of this is taken from [Hanselman.com](https://www.hanselman.com/blog/
  4. click `Remote-SSH: Connect to Host`
  5. TODO will add more documentation soon.
 
-## Hello World
-
-
+## Hello World - INCOMPLETE NEEDS WORK
+Once Connected to Raspberry Pi with Remote-SSH within Visual Studio. We can remotely develop.
+1. Use Git to Get the code `sudo git https://github.com/akasoggybunz/Remote-Programming-on-Pi-with-Dot-Net-Core/tree/master/code/Blink%20LED`
+2. Build & Publish `dotnet publish -r linux-arm`
+3. Run Code in publish directory `./code`
 
 
 
