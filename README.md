@@ -73,7 +73,7 @@ Once Connected to Raspberry Pi with Remote-SSH within Visual Studio. We can remo
 ## References, Sources, and Useful Links
 - https://github.com/dotnet/core/blob/master/samples/RaspberryPiInstructions.md
 - https://www.hanselman.com/blog/InstallingTheNETCore2xSDKOnARaspberryPiAndBlinkingAnLEDWithSystemDeviceGpio.aspx
-- https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-rhel7
+- https://gist.github.com/richlander/467813274cea8abc624553ee72b28213
 - https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.100-linux-arm32-binaries
 - https://www.techrepublic.com/blog/10-things/how-to-generate-ssh-keys-in-openssh-for-windows-10/
 - https://www.hanselman.com/blog/VisualStudioCodeRemoteDevelopmentOverSSHToARaspberryPiIsButter.aspx
