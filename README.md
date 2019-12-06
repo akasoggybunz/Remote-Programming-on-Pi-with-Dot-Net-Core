@@ -68,6 +68,10 @@ sudo nano ~/.bash_profile, ~/.bashrc
 ```console
 `ctrl+x` -> `y` -> `enter`
 sudo apt-get update
+```
+
+### Test Dot Net Commands
+```console
 dotnet --version
 ```
 - This should tell you the version of dotnet.
