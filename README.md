@@ -42,8 +42,7 @@ Instructions and Code sets for Programming on a Raspberry Pi using Dot Net Core 
 The following instructions install .NET Core globally. It isn't required to do that, but it provides the best experience.
 
 ```console
-curl -SL -o dotnet.tar.gz https://dotnetcli.blob.core.windows.net/dotnet/Sdk/master/dotnet-sdk-latest-l
-inux-arm64.tar.gz
+curl -SL -o dotnet.tar.gz https://dotnetcli.blob.core.windows.net/dotnet/Sdk/master/dotnet-sdk-latest-linux-arm64.tar.gz
 sudo mkdir -p /usr/share/dotnet
 sudo tar -zxf dotnet.tar.gz -C /usr/share/dotnet
 sudo ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
