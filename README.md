@@ -50,7 +50,7 @@ sudo ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
 ### Installing .Net Core Locally
 If you don't want to install Globally or the above didn't work try the following.
 ```console
-sudo apt-get update && apt-get upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install curl libunwind8 gettext apt-transport-https
 wget https://download.visualstudio.microsoft.com/download/pr/67766a96-eb8c-4cd2-bca4-ea63d2cc115c/7bf13840aa2ed88793b7315d5e0d74e6/dotnet-sdk-3.1.100-linux-arm.tar.gz
 mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-arm.tar.gz -C $HOME/dotnet
